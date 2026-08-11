@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700&display=swap");
+
+.container {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #020618;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lamp {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  height: 3px;
+  width: 90%;
+  background: #00d3f3;
+  animation: lineGrow 1s ease-out forwards;
+}
+
+.glow-big,
+.glow-small {
+  width: 80%;
+  height: 60%;
+  background: #00b8db;
+  border-radius: 100px;
+  position: absolute;
+  transform: translate(-50%, -80px);
+  left: 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+}
+
+.glow-small {
+  background: #00d3f3;
+  height: 45%;
+  width: 55%;
+  animation: glowSmallGrow 1s ease-out forwards;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #020618;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+@keyframes lineGrow {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes glowSmallGrow {
+  0% {
+    width: 20%;
+    opacity: 0;
+  }
+  100% {
+    width: 55%;
+    opacity: 1;
+  }
+}
+
+.text {
+  text-align: center;
+  height: 120px;
+  overflow: hidden;
+  margin-top: 200px;
+}
+
+.text h1 {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  animation: fadeIn 1s ease-out forwards;
+  transform: translateY(120px);
+  background: linear-gradient(to bottom, #d9f6fb, #8a8f90);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(120px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
