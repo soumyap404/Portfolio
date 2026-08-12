@@ -102,7 +102,7 @@ subDescription: [
   },
   
   {
-    id: 3,
+    id: 4,
   title: "Sign Language Recognition",
 description:
   "A real-time sign language recognition system that translates hand gestures into text and speech using computer vision and machine learning.",
@@ -114,7 +114,7 @@ subDescription: [
   "Optimized with ONNX for faster inference and a responsive desktop interface.",
 
 ],
-    href: "https://soumyap404.github.io/Number-Guessing-Game/",
+    href: "",
     logo: "",
     image: "/assets/projects/SignLanguage.png",
     tags: [
