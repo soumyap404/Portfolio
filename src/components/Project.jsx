@@ -6,6 +6,7 @@ const Project = ({
   description,
   subDescription,
   href,
+  repo,
   image,
   tags,
   setPreview,
@@ -45,6 +46,7 @@ const Project = ({
           image={image}
           tags={tags}
           href={href}
+          repo={repo}
           closeModal={() => setIsModalOpen(false)}
         />
       )}

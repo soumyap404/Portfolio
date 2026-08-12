@@ -11,6 +11,7 @@ export const myProjects = [
       "Implemented error handling for invalid city names and network issues.",
     ],
     href: "https://soumyap404.github.io/Weather-Forecast/",
+    repo: "https://github.com/soumyap404/Weather-Forecast",
     logo: "",
     image: "/assets/projects/weather.png",
     tags: [
@@ -44,6 +45,7 @@ export const myProjects = [
       "Clean UI with responsive design principles.",
     ],
     href: "https://soumyap404.github.io/snake-raider-2.0/",
+    repo: "https://github.com/soumyap404/snake-raider-2.0",
     logo: "",
     image: "/assets/projects/snake.png",
     tags: [
@@ -78,6 +80,7 @@ subDescription: [
   "Simple, responsive UI with score tracking and replay functionality.",
 ],
     href: "https://soumyap404.github.io/Number-Guessing-Game/",
+    repo: "https://github.com/soumyap404/Number-Guessing-Game",
     logo: "",
     image: "/assets/projects/Numberguessing.png",
     tags: [

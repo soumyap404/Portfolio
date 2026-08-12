@@ -6,6 +6,7 @@ const ProjectDetails = ({
   image,
   tags,
   href,
+  repo,
   closeModal,
 }) => {
   return (
@@ -41,15 +42,40 @@ const ProjectDetails = ({
                 />
               ))}
             </div>
-            <a
-              href={href || "#"}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
-            >
-              View Project
-              <img src="assets/arrow-up.svg" className="size-4" />
-            </a>
+            <div className="flex items-center gap-3">
+              <a
+                href={href || "#"}
+                target="_blank"
+                rel="noreferrer"
+               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-lg border border-cyan-400/40 bg-cyan-400/5 px-5 py-2.5 font-semibold text-cyan-300 shadow-[0_0_15px_rgba(34,211,238,0.15)] backdrop-blur-md transition-all duration-300 hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-white hover:shadow-[0_0_30px_rgba(34,211,238,0.35)]"
+>
+  <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+
+  <span className="relative">View Project</span>
+
+  <img
+    src="assets/arrow-up.svg"
+    className="relative size-4 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+  />
+              </a>
+              {repo && (
+                <a
+  href={repo}
+  target="_blank"
+  rel="noreferrer"
+  className="group relative inline-flex items-center gap-2 overflow-hidden rounded-lg border border-cyan-400/40 bg-cyan-400/5 px-5 py-2.5 font-semibold text-cyan-300 shadow-[0_0_15px_rgba(34,211,238,0.15)] backdrop-blur-md transition-all duration-300 hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-white hover:shadow-[0_0_30px_rgba(34,211,238,0.35)]"
+>
+  <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+
+  <span className="relative">Get Code</span>
+
+  <img
+    src="assets/arrow-up.svg"
+    className="relative size-4 transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+  />
+</a>
+              )}
+            </div>
           </div>
         </div>
       </motion.div>
