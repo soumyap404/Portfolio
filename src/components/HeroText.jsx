@@ -59,41 +59,32 @@ const HeroText = () => {
           </motion.p> 
           <motion.div>
           <ShimmerButton
-            className="
-              mt-8 
-              font-black
-              text-white
-              border border-cyan-400/40
-              bg-cyan-500/10
-              shadow-[0_0_20px_rgba(34,211,238,0.2)]
-              transition-all duration-300
-              hover:bg-cyan-400/20
-              hover:border-cyan-300
-              hover:shadow-[0_0_30px_rgba(34,211,238,0.45)]
-              hover:scale-105
-              active:scale-95
-              
-            "
-            shimmerColor="#38bdf8"
-            onClick={() => {
-              const resumeUrl = "../public/resume.pdf";
-              const fallbackUrl = "/resume.html";
-              const isPdf =
-                typeof window !== "undefined" &&
-                window.location.href.includes("resume");
-              window.open(
-                isPdf ? fallbackUrl : resumeUrl,
-                "_blank",
-                "noopener,noreferrer",
-              );
-            }}
-          >
-            My Resume <img
-    src="../public/assets/logos/eye.png"
-    alt="PDF"
-   className="from_left w-6 h-6 ml-3"
+  className="
+    mt-8
+    font-black
+    text-white
+    border border-cyan-400/40
+    bg-cyan-500/10
+    shadow-[0_0_20px_rgba(34,211,238,0.2)]
+    transition-all duration-300
+    hover:bg-cyan-400/20
+    hover:border-cyan-300
+    hover:shadow-[0_0_30px_rgba(34,211,238,0.45)]
+    hover:scale-105
+    active:scale-95
+  "
+  shimmerColor="#38bdf8"
+  onClick={() => {
+    window.open("/resume.pdf", "_blank", "noopener,noreferrer");
+  }}
+>
+  My Resume
+  <img
+    src="/assets/logos/eye.png"
+    alt="View Resume"
+    className="from_left w-6 h-6 ml-3"
   />
-          </ShimmerButton>
+</ShimmerButton>
           </motion.div>
         </motion.div>
       </motion.div>
