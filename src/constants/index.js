@@ -140,7 +140,7 @@ export const mySocials = [
 
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3BNHG3DbTDTl6cfazF%2BH4nTw%3D%3D",
+    href: "https://www.linkedin.com/in/soumya-pramanik/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
